@@ -1,0 +1,30 @@
+//==================== Forms ====================//
+
+//== Basic ==//
+.form {
+
+  //== Form Header ==//
+  .header {
+    background: $blue;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: $font-semi-bold;
+    left: 0;
+    padding: $gutter 30px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+  }
+  //== Varitation: Contact ==//
+  &.contact {
+    width: 700px;
+    box-shadow: $box-shadow;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 110px 35px 50px;
+    max-width: 100%;
+  }
+}

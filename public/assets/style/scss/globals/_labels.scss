@@ -1,0 +1,14 @@
+//==================== Labels ====================//
+
+//== Basic ==//
+label {
+  font-weight: $font-bold;
+  color: $dark-blue-gray;
+  position: absolute;
+  top: 5px;
+  transition: .15s;
+  //== Label with error ==//
+  &.error {
+    color: $pink;
+  }
+}

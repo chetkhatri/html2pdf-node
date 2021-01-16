@@ -1,0 +1,92 @@
+//==================== Inputs ====================//
+
+//== Basic ==//
+.input {
+  border: none;
+  border-radius: 0px !important;
+  border-bottom: 1px solid $dark-blue-gray;
+  background: none;
+  width: 100%;
+  resize: none;
+  font-size: 1.1em;
+  font-weight: $font-semi-bold;
+  margin-bottom: 45px;
+  height: 40px;
+  padding-bottom: 10px;
+  color: $dark-blue-gray;
+  transition: $transition;
+
+  //== On Focus Underline Grow ==//
+  &:focus {
+    outline: none !important;
+    &:first-of-type + .input-underline {
+      width: 100%;
+    }
+  }
+
+}
+
+//== On Focus Textarea Grow ==//
+textarea {
+  transition: $transition;
+  padding-top: 15px !important;
+  overflow: hidden;
+  &.grow {
+    height: 400px !important;
+  }
+}
+
+//== Div that sits under the input to give the illusion of the border growing on focus ==//
+.input-wrapper {
+  position: relative;
+}
+
+.input-underline {
+  content: "";
+  display: block;
+  background:$dark-blue-gray;
+  transition: width $transition;
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  bottom:45px;
+  //== Input Underline Error ==//
+  &.error {
+    background: $pink;
+    width: 100%;
+  }
+}
+
+//== Placeholder Text Color ==//
+
+::-webkit-input-placeholder {
+   color: $dark-blue-gray !important;
+}
+
+:-moz-placeholder {
+   color: $dark-blue-gray !important;
+   opacity: 1;
+}
+
+::-moz-placeholder {
+   color: $dark-blue-gray !important;
+   opacity: 1;
+}
+
+:-ms-input-placeholder {
+   color: $dark-blue-gray !important;
+}
+
+//== Change the white to any color ;) ==//
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+//== saf3+, chrome1+ ==/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .input-underline {
+    &.textarea {
+      bottom: 48px !important;
+    }
+  }
+}

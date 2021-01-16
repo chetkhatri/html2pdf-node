@@ -1,0 +1,36 @@
+//==================== Globals ====================//
+
+//== Import Variables ==//
+@import 'globals/variables';
+
+//== Import Normalize ==//
+@import 'globals/normalize';
+
+//== Import Default ==//
+@import 'globals/default';
+
+//== Import Fonts ==//
+@import 'globals/import-fonts';
+
+//== Import Container ==//
+@import 'globals/container';
+
+//== Import Generic Classes ==//
+@import 'globals/generic-classes';
+
+//== Import Labels ==//
+@import 'globals/labels';
+
+//==================== Components ====================//
+
+//== Import Buttons ==//
+@import 'components/buttons';
+
+//== Import Inputs ==//
+@import 'components/inputs';
+
+//== Import Forms ==//
+@import 'components/forms';
+
+//== Import Notifications ==//
+@import 'components/notifications';

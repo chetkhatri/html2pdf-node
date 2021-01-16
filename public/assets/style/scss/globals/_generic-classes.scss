@@ -1,0 +1,47 @@
+//==================== Generic Classes ====================//
+
+//== Colors ==//
+.blue {
+  color: $blue !important;
+}
+
+//== Flex Pulls ==//
+.right {
+  margin-left: auto;
+}
+.left {
+  margin-right: auto;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//== No Padding ==//
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//== Fonts ==//
+.semi-bold {
+  font-weight: $font-semi-bold !important;
+}
+
+//== Flex ==//
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+//== Row ==//
+.row {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+//== HIde ==//
+.hide {
+  display: none;
+}

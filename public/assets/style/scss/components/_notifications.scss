@@ -1,0 +1,41 @@
+//==================== Messages ====================//
+
+//== Contact Form: Message Notification ==//
+
+.notification {
+  background: white;
+  box-shadow: $box-shadow;
+  position: fixed;
+  top:15px;
+  right:-400px;
+  padding: 10px;
+  z-index: 5000;
+  border-radius: 2px;
+  transition: $transition;
+  .left {
+    img {
+      width: 50px;
+      border-radius: 50px;
+      border: 2px solid $blue;
+    }
+  }
+  .right {
+    padding-left: $gutter;
+    padding-right: $gutter;
+    .name {
+      font-weight: $font-semi-bold;
+      color: $black;
+    }
+    .message {
+      color: $gray;
+    }
+    .date {
+      font-size: 0.85em;
+      font-weight: $font-semi-bold;
+      position: absolute;
+      right: $gutter;
+      top: 3px;
+      color: #333;
+    }
+  }
+}

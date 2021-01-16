@@ -1,0 +1,67 @@
+//==================== Colors ====================//
+
+//== Standard Font Color ==//
+$black: #222222;
+
+//== Pink ==//
+$pink: #E91E63;
+
+//== Blue ==//
+$blue:#109F9A;
+
+//== Light Gray ==//
+$light-gray: #ECEFF1;
+
+//== Gray ==//
+$gray: #555555;
+
+//== Light Blue Gray ==//
+$light-blue-gray: #78909C;
+
+//== Dark Blue Gray ==//
+$dark-blue-gray: #455960;
+
+//==================== Global Styles ====================//
+
+//== Standard Box Shadow ==//
+$box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+//== Hover Box Shadow ==//
+$hover-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+//== Border ==//
+$border: 1px solid #e0e0e0;
+
+//== Gutter ==//
+$gutter: 15px;
+
+//== Transition ==//
+$transition: .35s;
+
+//==================== Fonts ====================//
+
+//== Font: Dosis ==//
+$primary-font: Dosis;
+
+//== Font Weights ==//
+$font-light: 200;
+$font-normal:300;
+$font-semi-bold: 500;
+$font-bold: 700;
+
+//==================== Breakpoints ====================//
+
+//== Small Mobile Phones ==//
+$xxs: 500px;
+
+//== Mobile Phones ==//
+$xs: 767px;
+
+//== Tablets ==//
+$sm: 991px;
+
+//== Laptops ==//
+$md: 1200px;
+
+//== Desktops ==//
+$lg: $md + 1;
