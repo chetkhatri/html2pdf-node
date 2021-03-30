@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
-
+const process = require('process');
 var fs = require('fs');
 var url = require('url');
+
 var wkhtmltopdf = require('wkhtmltopdf');
 
 app.set('view engine','pug')
@@ -14,13 +15,13 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.post('/submit', (req, res) => {
+app.post('/submit', async function (req, res, next)  {
 
-  var pdfValues = 
+    var pdfValues = 
 
 `<table style="width:100%">
   <tr>
-    <th>Name</th>
+    <th>Name</th> 
     <th>Email</th>
     <th>Contact Number</th>
     <th>Subject</th>
@@ -36,9 +37,13 @@ app.post('/submit', (req, res) => {
 </table>`
 
 
-  
   res.writeHead(200, {'Content-Type': 'application/pdf'});
   wkhtmltopdf(pdfValues).pipe(res);
 
+
 })
+
 app.listen(3232)
+process.on('uncaughtException', function (err) {
+  console.log('Caught exception: ', err);
+});
