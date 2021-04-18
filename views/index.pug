@@ -15,12 +15,12 @@ html
             .field-body
               .field
                 p.control.is-expanded.has-icons-left
-                  input.input(name="custName" type="text" placeholder="Name")
+                  input.input(name="custName" id="custName" type="text" placeholder="Name")
                   span.icon.is-small.is-left
                     i.fas.fa-user
               .field
                 p.control.is-expanded.has-icons-left.has-icons-right
-                  input.input.is-success(name="custEmail" type="email" placeholder="Email" value="alex@smith.com")
+                  input.input.is-success(name="custEmail" id="custEmail" type="email" placeholder="Email")
                   span.icon.is-small.is-left
                     i.fas.fa-envelope
                   span.icon.is-small.is-right
@@ -32,9 +32,9 @@ html
                 .field.has-addons
                   p.control
                     a.button.is-static
-                      | +44
+                      | +91
                   p.control.is-expanded
-                    input.input(name="telnumber" type="tel" placeholder="Your phone number")
+                    input.input(name="telnumber" id="telnumber" type="tel" placeholder="Your phone number")
                 p.help Do not enter the first zero
         
           .field.is-horizontal
@@ -43,7 +43,7 @@ html
             .field-body
               .field
                 .control
-                  input.input.is-danger(name="subject" type="text" placeholder="e.g. Partnership opportunity")
+                  input.input.is-danger(name="subject" id="subject" type="text" placeholder="e.g. Partnership opportunity")
                 p.help.is-danger
                   | This field is required
           .field.is-horizontal
@@ -52,7 +52,7 @@ html
             .field-body
               .field
                 .control
-                  textarea.textarea(name="question" placeholder="Explain how we can help you")
+                  textarea.textarea(name="question" id="question" placeholder="Explain how we can help you")
           .field.is-horizontal
             .field-label
               // Left empty for spacing
