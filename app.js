@@ -30,20 +30,17 @@ app.post('/submit', [
       .isNumeric().withMessage('Telephone number must be numberic').bail(),
     check('question', 'Question can not be empty').not().isEmpty().isAlpha()
       .withMessage('Only Alphanumberic with space allowed in question').bail(),
-], function (req, res)  {
+    ], function (req, res)  {
 
   const errors = validationResult(req);
   console.log(req.body);
-  
   var encodedSubject = encodeUrl(req.body.subject)
 
   if (!errors.isEmpty()) {
     return res.status(422).jsonp(errors.array());
   } else {
     var subjectValue = decodeURIComponent(decodeURIComponent(req.body.subject))
-    
-    var pdfValues = 
-
+    var pdfValues =
 `<table style="width:100%">
   <tr>
     <th>Name</th> 
@@ -67,11 +64,9 @@ app.post('/submit', [
 
   }
 
-    
-
 })
 
 app.listen(3232)
 process.on('uncaughtException', function (err) {
-  console.log('Caught exception: ', err); 
+  console.log('Caught exception: ', err)
 });
