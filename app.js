@@ -4,7 +4,6 @@ const process = require('process');
 var fs = require('fs');
 var url = require('url');
 var encodeUrl = require('encodeurl')
-var escapeHtml = require('escape-html')
 
 var wkhtmltopdf = require('wkhtmltopdf');
 
