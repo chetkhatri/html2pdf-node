@@ -9,10 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "encodeurl": "^1.0.2",
     "express": "^4.17.1",
+    "express-validator": "^6.6.0",
     "pug": "^3.0.0",
     "wkhtmltopdf": "^0.3.4",
-    "wkhtmltox": "^1.1.4",
-    "express-validator": "^6.6.0"
+    "wkhtmltox": "^1.1.4"
   }
 }
